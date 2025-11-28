@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+  api:
+    image: api-node:v1.0.0
+    container_name: api-node
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mariadb
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: users_groups
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - backend
+
+  mariadb:
+    image: mariadb:11
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: users_groups
+      MYSQL_ROOT_HOST: "%"
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb -uroot -proot -e 'SELECT 1'"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks:
+      - backend
+
+networks:
+  backend:

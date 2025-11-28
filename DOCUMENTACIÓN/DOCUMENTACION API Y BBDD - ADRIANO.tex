@@ -1,0 +1,619 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{tabularx}
+\usepackage{fancyvrb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+\usepackage{librefranklin}
+
+\renewcommand*\familydefault{\sfdefault}
+\DefineVerbatimEnvironment{Json}{Verbatim}{fontsize=\small, frame=single, framerule=0.5pt, framesep=5pt}
+\setlength{\parindent}{0pt}
+\onehalfspacing
+\setcounter{tocdepth}{2}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+    \centering
+    \vspace*{1 cm}
+    \Huge
+    \textbf{Dockerización de API y BBDD}
+
+    \vspace{0.5 cm}
+    \Large
+    Programación de Servicios y Procesos
+
+    \vspace{5.5 cm}
+    \textbf{Adrián Condines Celada}
+
+    \vspace{0.8 cm}    
+    \normalsize
+    Aula Estudio\\
+
+    \vspace{0.8 cm}
+    2º Ciclo Superior - Desarrollo de Aplicaciones Multiplataforma\\
+
+    \vspace{0.8 cm}
+    Curso 2025 - 2026
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{INTRODUCCIÓN Y OBJETIVOS}
+
+\section{API}
+
+\justify
+Está sección detalla los endpoints disponibles en la API para gestionar los usuarios y los grupos.
+
+\subsection{Listar todos los usuarios}
+
+\subsubsection{Descripción}
+
+\justify
+Obtiene una lista de todos los registros almacenados en la tabla \texttt{users}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} GET
+    \item \textbf{URL:} \texttt{/api/usuarios}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+No requiere ningún input (ni parámetros en la URL ni body).
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un array de objetos JSON, cada uno representando un rapero.
+
+\begin{Json}
+
+[
+    {
+        "id": 1,
+        "name": "Bruno"
+    },
+    {
+        "id": 2,
+        "name": "Adriano"
+    }
+]
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al devolver los datos de los usuarios: (error)"
+}
+
+\end{Json}
+
+\subsection{Listar un usuario en concreto}
+
+\subsubsection{Descripción}
+
+\justify
+Obtiene un solo registro en la tabla \texttt{users}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} GET
+    \item \textbf{URL:} \texttt{/api/usuarios/:id}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Parámetro \texttt{id} en la URL.
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un JSON en el que se incluye el usuario a buscar.
+
+\begin{Json}
+
+[
+    {
+        "id": 1,
+        "name": "Bruno"
+    }
+]
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\begin{Json}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+{
+  "error": "Error al devolver los datos del usuario: (error)"
+}
+
+\end{Json}
+
+\subsection{Añadir un usuario}
+
+\subsubsection{Descripción}
+
+\justify
+Añade un registro a la tabla \texttt{users}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} POST
+    \item \textbf{URL:} \texttt{/api/usuarios}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Un objeto JSON en el body de la petición con el nombre del nuevo usuario.
+
+\begin{Json}
+
+{
+    "name": "Adriano"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un mensaje de confirmación y un estado 201.
+
+\begin{Json}
+
+{
+    "success": "Los datos se han insertado correctamente"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\begin{Json}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+{
+  "error": "Error al añadir el usuario: (error)"
+}
+
+\end{Json}
+
+\subsection{Eliminar un usuario}
+
+\subsubsection{Descripción}
+
+\justify
+Elimina un registro de la tabla \texttt{users}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} DELETE
+    \item \textbf{URL:} \texttt{/api/usuarios/:id}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Parámetro \texttt{id} en la URL.
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un mensaje de confirmación y un estado 201.
+
+\begin{Json}
+
+{
+    "success": "Los datos se han insertado correctamente"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al añadir el usuario: (error)"
+}
+
+\end{Json}
+
+\subsection{Cambiar el nombre de un usuario}
+
+\subsubsection{Descripción}
+
+\justify
+Modifica el campo \textbf{name} de un registro de la tabla \texttt{users}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} PUT
+    \item \textbf{URL:} \texttt{/api/usuarios/:id}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Parámetro \texttt{id} en la URL y un objeto JSON en el body de la petición con el nombre del nuevo usuario.
+
+\begin{Json}
+
+{
+    "name": "Adriano"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un mensaje de confirmación y un estado 200.
+
+\begin{Json}
+
+{
+    "success": "Se ha modificado registro correctamente"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al modificar el nombre del usuario: (error)"
+}
+
+\end{Json}
+
+\subsection{Listar todos los grupos}
+
+\subsubsection{Descripción}
+
+\justify
+Obtiene una lista de todos los registros almacenados en la tabla \texttt{groups}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} GET
+    \item \textbf{URL:} \texttt{/api/grupos}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+No requiere ningún input (ni parámetros en la URL ni body).
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un array de objetos JSON, cada uno representando un rapero.
+
+\begin{Json}
+
+[
+    {
+        "id": 1,
+        "name": "Aulaestudienses"
+    },
+    {
+        "id": 2,
+        "name": "Antijavanianos"
+    }
+]
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al devolver los datos de los grupos: (error)"
+}
+
+\end{Json}
+
+\subsection{Listar un grupo en concreto}
+
+\subsubsection{Descripción}
+
+\justify
+Obtiene un solo registro en la tabla \texttt{groups}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} GET
+    \item \textbf{URL:} \texttt{/api/grupos/:id}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Parámetro \texttt{id} en la URL.
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un JSON en el que se incluye el grupo a buscar.
+
+\begin{Json}
+
+[
+    {
+        "id": 1,
+        "name": "Aulaestudienses"
+    }
+]
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al devolver los datos del usuario: (error)"
+}
+
+\end{Json}
+
+\subsection{Añadir un grupo}
+
+\subsubsection{Descripción}
+
+\justify
+Añade un registro a la tabla \texttt{users}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} POST
+    \item \textbf{URL:} \texttt{/api/grupos}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Un objeto JSON en el body de la petición con el nombre del nuevo grupo.
+
+\begin{Json}
+
+{
+    "name": "Aulaestudienses"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un mensaje de confirmación y un estado 200.
+
+\begin{Json}
+
+{
+    "success": "Los datos se han insertado correctamente"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al añadir el usuario: (error)"
+}
+
+\end{Json}
+
+\subsection{Eliminar un grupo}
+
+\subsubsection{Descripción}
+
+\justify
+Elimina un registro de la tabla \texttt{groups}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} DELETE
+    \item \textbf{URL:} \texttt{/api/grupos/:id}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Parámetro \texttt{id} en la URL.
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un mensaje de confirmación y un estado 201.
+
+\begin{Json}
+
+{
+    "success": "Grupo eliminado correctamente"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al eliminar el grupo: (error)"
+}
+
+\end{Json}
+
+\subsection{Añadir un usuario a un grupo}
+
+\subsubsection{Descripción}
+
+\justify
+Añade un registro a la tabla \texttt{users\_groups}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} POST
+    \item \textbf{URL:} \texttt{/api/grupos/:id\_grupo/:id\_usuario}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Parámetros \texttt{id\_grupo} y \texttt{id\_usuario} en la URL.
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un mensaje de confirmación y un estado 200.
+
+\begin{Json}
+
+{
+    "success": "Los datos se han insertado correctamente"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al añadir el usuario al grupo: (error)"
+}
+
+\end{Json}
+
+\subsection{Eliminar un usuario a un grupo}
+
+\subsubsection{Descripción}
+
+\justify
+Elimina un registro de la tabla \texttt{users\_groups}.
+
+\begin{itemize}
+
+    \item \textbf{Método:} DELETE
+    \item \textbf{URL:} \texttt{/api/grupos/:id\_grupo/:id\_usuario}
+    
+\end{itemize}
+
+\subsubsection{Ejemplo de Input}
+
+\justify
+Parámetros \texttt{id\_grupo} y \texttt{id\_usuario} en la URL.
+
+\subsubsection{Ejemplo de Output (Éxito)}
+
+\justify
+Responde con un mensaje de confirmación y un estado 200.
+
+\begin{Json}
+
+{
+    "success": "Usuario eliminado del grupo correctamente"
+}
+
+\end{Json}
+
+\subsubsection{Ejemplo de Output (Error)}
+
+\justify
+Responde con un JSON incluyendo un mensaje de error.
+
+\begin{Json}
+
+{
+  "error": "Error al añadir el usuario al grupo: (error)"
+}
+
+\end{Json}
+
+\section{ESTRUCTURA DEL PROYECTO}
+
+\begin{verbatim}
+    
+api_usuarios_grupos/
+|-- db/
+|-- DOCUMENTACIÓN/
+|   |-- images/
+|   |    |-- css_icon.png
+|   |-- DOCUMENTACIÓN API Y BBDD - ADRIANO.tex
+|   |-- DOCUMENTACIÓN API Y BBDD - ADRIANO.pdf
+|-- .dockerignore
+|-- .env
+|-- docker-compose.yaml
+|-- Dockerfile
+|-- index.js
+|-- package-lock.json
+|-- package.json
+
+\end{verbatim}
+
+\section{PROCESO DE DOCKERIZACIÓN}
+
+\end{document}

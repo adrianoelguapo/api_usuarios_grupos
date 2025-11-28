@@ -1,0 +1,367 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  28 NOV 2025 18:17
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/akadoblee/Desktop/api_usuarios_grupos/DOCUMENTACIÓN/DOCUMENTACION API Y BBDD - ADRIANO.tex"
+(c:/Users/akadoblee/Desktop/api_usuarios_grupos/DOCUMENTACIÓN/DOCUMENTACION API Y BBDD - ADRIANO.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count283
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2045.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2047.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2049.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2050.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2051.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2053.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2078.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count284
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 12.
+)
+\es@quottoks=\toks17
+\es@quotdepth=\count285
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 3.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 3.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count286
+\Gm@cntv=\count287
+\c@Gm@tempcnt=\count288
+\Gm@bindingoffset=\dimen150
+\Gm@wd@mp=\dimen151
+\Gm@odd@mp=\dimen152
+\Gm@even@mp=\dimen153
+\Gm@layoutwidth=\dimen154
+\Gm@layoutheight=\dimen155
+\Gm@layouthoffset=\dimen156
+\Gm@layoutvoffset=\dimen157
+\Gm@dimlist=\toks19
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box53
+\extrarowheight=\dimen159
+\NC@list=\toks20
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box54
+)
+\TX@col@width=\dimen160
+\TX@old@table=\dimen161
+\TX@old@col=\dimen162
+\TX@target=\dimen163
+\TX@delta=\dimen164
+\TX@cols=\count289
+\TX@ftn=\toks21
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count290
+\FV@InFile=\read3
+\FV@TabBox=\box55
+\c@FancyVerbLine=\count291
+\FV@StepNumber=\count292
+\FV@OutFile=\write3
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip53
+\RaggedLeftLeftskip=\skip54
+\RaggedRightLeftskip=\skip55
+\CenteringRightskip=\skip56
+\RaggedLeftRightskip=\skip57
+\RaggedRightRightskip=\skip58
+\CenteringParfillskip=\skip59
+\RaggedLeftParfillskip=\skip60
+\RaggedRightParfillskip=\skip61
+\JustifyingParfillskip=\skip62
+\CenteringParindent=\skip63
+\RaggedLeftParindent=\skip64
+\RaggedRightParindent=\skip65
+\JustifyingParindent=\skip66
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\librefranklin.sty
+Package: librefranklin 2022/09/19 (Bob Tennent) Supports LibreFranklin fonts for all LaTeX engines.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+)
+\XKV@depth=\count293
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
+Package: fontaxes 2025-05-24 v2.0.1 Font selection axes (deprecated)
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\figureversions.sty
+Package: figureversions 2025-04-29 v1.0.1 Figure versions
+)))
+LaTeX Font Info:    Trying to load font information for T1+LibreFranklin-TLF on input line 19.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\t1librefranklin-tlf.fd
+File: T1LibreFranklin-TLF.fd 2019/10/23 (autoinst) Font definitions for T1/LibreFranklin-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/m/n' in size <12> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/regular/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 19.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count294
+) (DOCUMENTACION API Y BBDD - ADRIANO.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 8.
+)
+\openout1 = `"DOCUMENTACION API Y BBDD - ADRIANO.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=681.15898pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=49.79231pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count295
+\scratchdimen=\dimen167
+\scratchbox=\box56
+\nofMPsegments=\count296
+\nofMParguments=\count297
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen168
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
+\everyMPtoPDFconversion=\toks25
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@mv@tabular=\count301
+\c@mv@boldtabular=\count302
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/m/n' in size <24.88> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/regular/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/regular/n' will be
+(Font)              scaled to size 24.88pt on input line 25.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/b/n' in size <24.88> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/bold/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/bold/n' will be
+(Font)              scaled to size 24.88pt on input line 26.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/m/n' in size <17.28> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/regular/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/regular/n' will be
+(Font)              scaled to size 17.28pt on input line 29.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/b/n' in size <17.28> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/bold/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/bold/n' will be
+(Font)              scaled to size 17.28pt on input line 33.
+LaTeX Font Info:    Trying to load font information for TS1+LibreFranklin-TLF on input line 40.
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\ts1librefranklin-tlf.fd
+File: TS1LibreFranklin-TLF.fd 2019/10/23 (autoinst) Font definitions for TS1/LibreFranklin-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LibreFranklin-TLF/m/n' in size <12> not available
+(Font)              Font shape `TS1/LibreFranklin-TLF/regular/n' tried instead on input line 40.
+LaTeX Font Info:    Font shape `TS1/LibreFranklin-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 40.
+
+
+[1
+
+{C:/Users/akadoblee/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/librefranklin/lbfr_tf5jo5.enc}{C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/librefranklin/lbfr_nb4g6w.enc}] (DOCUMENTACION API Y BBDD - ADRIANO.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/b/n' in size <12> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/bold/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+)
+\tf@toc=\write4
+\openout4 = `"DOCUMENTACION API Y BBDD - ADRIANO.toc"'.
+
+
+
+[1]
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/m/n' in size <14.4> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/regular/n' tried instead on input line 57.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 57.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/b/n' in size <14.4> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/bold/n' tried instead on input line 57.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 57.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/m/n' in size <10.95> not available
+(Font)              Font shape `T1/LibreFranklin-TLF/regular/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 81.
+
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11]
+
+[12]
+
+[13] (DOCUMENTACION API Y BBDD - ADRIANO.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 4958 strings out of 468130
+ 89401 string characters out of 5428697
+ 497126 words of memory out of 5000000
+ 33507 multiletter control sequences out of 15000+600000
+ 691475 words of font info for 69 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 67i,5n,73p,387b,370s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\akadoblee\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\akadoblee\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Bold.pfb><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Regular.pfb>
+Output written on "DOCUMENTACION API Y BBDD - ADRIANO.pdf" (14 pages, 106816 bytes).
+PDF statistics:
+ 160 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
