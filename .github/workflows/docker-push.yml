@@ -33,7 +33,6 @@ jobs:
       - name: Build & Push
         uses: docker/build-push-action@v5
         with:
-          context: ./api
           file: ../../Dockerfile
           push: true
           tags: ${{ env.IMAGE }}:${{ env.TAG }}
