@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  7 DEC 2025 23:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  7 DEC 2025 23:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -458,9 +458,14 @@ File: images/14.png Graphic file (type png)
 <use images/14.png>
 Package pdftex.def Info: images/14.png  used on input line 850.
 (pdftex.def)             Requested size: 426.79134pt x 70.67833pt.
+<images/15.png, id=110, 1026.08344pt x 347.04657pt>
+File: images/15.png Graphic file (type png)
+<use images/15.png>
+Package pdftex.def Info: images/15.png  used on input line 874.
+(pdftex.def)             Requested size: 426.79134pt x 144.34996pt.
 
 
-[24 <./images/14.png>] (DOCUMENTACION API Y BBDD - ADRIANO.aux
+[24 <./images/14.png> <./images/15.png>] (DOCUMENTACION API Y BBDD - ADRIANO.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -470,17 +475,17 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5074 strings out of 468130
- 91357 string characters out of 5429665
+ 5081 strings out of 468130
+ 91496 string characters out of 5429665
  497126 words of memory out of 5000000
- 33623 multiletter control sequences out of 15000+600000
+ 33630 multiletter control sequences out of 15000+600000
  691475 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,6n,73p,561b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\elguapo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\elguapo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Bold.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Regular.pfb>
-Output written on "DOCUMENTACION API Y BBDD - ADRIANO.pdf" (25 pages, 666910 bytes).
+Output written on "DOCUMENTACION API Y BBDD - ADRIANO.pdf" (25 pages, 705415 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
+ 230 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE: ${{ secrets.DOCKER_USERNAME }}/ejemplo-api-docker
+  IMAGE: ${{ secrets.DOCKER_USERNAME }}/apì-node
 
 jobs:
   docker:
@@ -38,7 +38,6 @@ jobs:
           tags: ${{ env.IMAGE }}:${{ env.TAG }}
 
       - name: Telegram Message
-        if: startsWith(github.ref, 'refs/tags/')
         run: |
           curl -s \
             -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
