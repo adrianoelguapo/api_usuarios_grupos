@@ -1,5 +1,8 @@
 node_modules
+DOCUMENTACIÓN
 .git
 .gitignore
 *.md
+*.txt
+.env
 docker-compose.yaml

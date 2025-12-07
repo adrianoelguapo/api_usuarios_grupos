@@ -49,6 +49,9 @@
 
 \section{INTRODUCCIÓN Y OBJETIVOS}
 
+\justify
+En esta práctica se documenta la API utilizada en esta práctica, así como el proceso de creación y subida de una imagen de la API a Docker Hub y el proceso de automatización de nuevas versiones utilizando GitHub Actions.
+
 \section{API}
 
 \justify
@@ -616,8 +619,151 @@ api_usuarios_grupos/
 
 \end{verbatim}
 
-\section{PROCESO DE DOCKERIZACIÓN}
+\section{DOCKERIZACIÓN Y SUBIDA DE IMAGEN}
+
+\justify
+El primer requisito para esta sección de la práctica es crear una cuenta en Docker Hub y una vez creada, se debe inicar sesión con esa misma cuenta en la aplicación de Docker Desktop.
+
+\justify
+Una vez creada la cuenta, se creará el archivo Dockerfile con la siguiente estrcutura:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=8cm]{images/1.png}
+    
+\end{figure}
+
+\justify
+En el archivo Dockerfile se incluyen las siguientes sentencias:
+
+\begin{itemize}
+
+    \item \textbf{FROM}: Indica una imagen base necesaria para la creación de la imagen de la API.
+    \item \textbf{WORKDIR}: Indica el directorio de trabajo.
+    \item \textbf{COPY}: Copia el archivo \texttt{package.json} y \texttt{package-lock.json} al directorio de trabajo.
+    \item \textbf{RUN}: Ejecuta el comando \texttt{npm install} para instalar las dependencias.
+    \item \textbf{COPY}: Copia el resto de archivos al directorio de trabajo.
+    \item \textbf{EXPOSE}: Indica el puerto en el que se ejecutará la API.
+    \item \textbf{CMD}: Indica el comando que se ejecutará al iniciar el contenedor.
+    
+\end{itemize}
+
+\justify
+También se debe crear un archivo \texttt{.dockerignore} para evitar que se suban archivos innecesarios a la imagen que se subirá a Docker Hub. En este caso tiene la siguiente estructura:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=8cm]{images/2.png}
+    
+\end{figure}
+
+\justify
+En este caso se ignoran los siguientes archivos o directorios:
+
+\begin{itemize}
+
+    \item \textbf{node\_modules/}: Directorio de dependencias de Node.js.
+    \item \textbf{DOCUMENTACIÓN/}: Directorio en el que se encuentra la documentación.
+    \item \textbf{.git/}: Directorio que almacena la información de control de versiones de Git.
+    \item \textbf{.gitignore}: Archivo que indica los archivos y directorios cuyo contenido no se subirá al repositorio remoto.
+    \item \textbf{*.txt y *.md}: Archivos de texto y markdown.
+    \item \textbf{docker-compose.yaml}: Archivo para la creación posterior de un stack utilizando la imagen que se subirá a Docker Hub.
+
+\end{itemize}
+
+\justify
+Una vez preparados los dos archivos, se debe abrir una terminal en el directorio del proyecto y ejecutar el siguiente comando para realizar una \texttt{build} de la imagen: \newline
+
+\centering
+\texttt{docker build -t <usuario>/<imagen>:<tag> <ruta\_archivo\_dockerfile>}
+
+\justify
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/3.png}
+    
+\end{figure}
+
+\justify
+Una vez creada la imagen, se debe subir a Docker Hub utilizando el siguiente comando: \newline
+
+\centering
+\texttt{docker push <usuario>/<imagen>:<tag>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/4.png}
+    
+\end{figure}
+
+\justify
+Para verificar que la imagen se haya subido correctamente a Docker Hub, se debe ejecutar la aplicación Docker Desktop con la sesión iniciada y en el panel de la izquierda se debe seleccionar la pestaña llamada \textbf{Images}. Una vez en ella se debe seleccionar la pestaña llamada \textbf{My Hub} y en ella ya debería de aparecer la imagen subida.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/5.png}
+    
+\end{figure}
+
+\newpage
 
 \section{CI/CD CON GITHUB ACTIONS}
+
+\justify
+En esta sección se explicarán los pasos para crear un workflow con GitHub Actions que permita subir la imagen a Docker Hub cuando se realice un push a la rama main del repositorio remoto y se enviará un mensaje de aviso por Telegram.
+
+\justify
+El primer paso será crear el bot de Telegram en el que se verán reflejados los avisos de nuevas subidas de la imagen en Docker Hub y para ello el primer paso será iniciar un nuevo chat con el bot \textbf{@BotFather} con el comando \texttt{/start}.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/6.png}
+    
+\end{figure}
+
+\justify
+Una vez iniciada la conversación, se debe utilizar el comando \texttt{/newbot} para comenzar el proceso de creación del bot. Una vez ejecutado el comando anterior, se deberá indicar el nombre y el usuario del bot siguiendo las instrucciones recibidas. Posteriormente se podrá acceder al chat con el bot recién creado con el enlace proporcionado y el token que se indica en el mensaje se debe de guardar para su posterior uso.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/7.png}
+    
+\end{figure}
+
+\justify
+El siguiente paso es obtener el \textbf{CHAT\_ID} de la conversación con el bot creado en el paso anterior. Para ello lo primero que se debe hacer es acceder al chat mediante el enlace proporcionado en la conversación con @BotFather y escribir cualquier mensaje.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/8.png}
+    
+\end{figure}
+
+\newpage
+
+\justify
+Una vez escrito el mensaje, se enviará una solicitud a la API de Telegram para obtener el \textbf{CHAT\_ID}. La URL a utilizar es la siguiente (se debe sustituir la etiqueta \texttt{token\_bot} por el token proporcionado por @BotFather). El valor buscado en la respuesta es el \texttt{id} del objeto \texttt{chat} que forma parte del objeto \texttt{message}: \newline
+
+\centering
+\texttt{https://api.telegram.org/bot<token\_bot>/getUpdates}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/9.png}
+    
+\end{figure}
+
+\justify
+Una vez obtenido el \textbf{CHAT\_ID}, 
 
 \end{document}
