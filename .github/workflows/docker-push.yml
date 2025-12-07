@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE: ${{ secrets.DOCKER_USERNAME }}/apì-node
+  IMAGE: ${{ secrets.DOCKER_USERNAME }}/ejemplo-api-docker
 
 jobs:
   docker:
