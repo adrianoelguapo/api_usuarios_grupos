@@ -58,3 +58,4 @@
 \contentsline {subsubsection}{\numberline {2.11.4}Ejemplo de Output (Error)}{12}{}%
 \contentsline {section}{\numberline {3}ESTRUCTURA DEL PROYECTO}{12}{}%
 \contentsline {section}{\numberline {4}PROCESO DE DOCKERIZACIÓN}{13}{}%
+\contentsline {section}{\numberline {5}CI/CD CON GITHUB ACTIONS}{13}{}%
