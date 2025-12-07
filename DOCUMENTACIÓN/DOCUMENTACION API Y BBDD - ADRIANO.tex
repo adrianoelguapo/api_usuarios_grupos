@@ -242,6 +242,8 @@ Responde con un mensaje de confirmación y un estado 201.
 
 \end{Json}
 
+\newpage
+
 \subsubsection{Ejemplo de Output (Error)}
 
 \justify
@@ -493,6 +495,8 @@ Responde con un mensaje de confirmación y un estado 201.
 
 \end{Json}
 
+\newpage
+
 \subsubsection{Ejemplo de Output (Error)}
 
 \justify
@@ -538,6 +542,8 @@ Responde con un mensaje de confirmación y un estado 200.
 
 \end{Json}
 
+\newpage
+
 \subsubsection{Ejemplo de Output (Error)}
 
 \justify
@@ -551,7 +557,7 @@ Responde con un JSON incluyendo un mensaje de error.
 
 \end{Json}
 
-\subsection{Eliminar un usuario a un grupo}
+\subsection{Eliminar un usuario de un grupo}
 
 \subsubsection{Descripción}
 
@@ -583,6 +589,8 @@ Responde con un mensaje de confirmación y un estado 200.
 
 \end{Json}
 
+\newpage
+
 \subsubsection{Ejemplo de Output (Error)}
 
 \justify
@@ -596,6 +604,8 @@ Responde con un JSON incluyendo un mensaje de error.
 
 \end{Json}
 
+\newpage
+
 \section{ESTRUCTURA DEL PROYECTO}
 
 \justify
@@ -604,20 +614,24 @@ En esta sección se define la estructura del proyecto:
 \begin{verbatim}
     
 api_usuarios_grupos/
+|-- .github/
 |-- db/
 |-- DOCUMENTACIÓN/
 |   |-- images/
 |   |-- DOCUMENTACIÓN API Y BBDD - ADRIANO.tex
 |   |-- DOCUMENTACIÓN API Y BBDD - ADRIANO.pdf
 |-- .dockerignore
-|-- .env
+|-- .env.example
 |-- docker-compose.yaml
 |-- Dockerfile
+|-- ejemplo ci-cd.txt
 |-- index.js
 |-- package-lock.json
 |-- package.json
 
 \end{verbatim}
+
+\newpage
 
 \section{DOCKERIZACIÓN Y SUBIDA DE IMAGEN}
 
@@ -649,6 +663,8 @@ En el archivo Dockerfile se incluyen las siguientes sentencias:
     
 \end{itemize}
 
+\newpage
+
 \justify
 También se debe crear un archivo \texttt{.dockerignore} para evitar que se suban archivos innecesarios a la imagen que se subirá a Docker Hub. En este caso tiene la siguiente estructura:
 
@@ -672,6 +688,8 @@ En este caso se ignoran los siguientes archivos o directorios:
     \item \textbf{docker-compose.yaml}: Archivo para la creación posterior de un stack utilizando la imagen que se subirá a Docker Hub.
 
 \end{itemize}
+
+\newpage
 
 \justify
 Una vez preparados los dos archivos, se debe abrir una terminal en el directorio del proyecto y ejecutar el siguiente comando para realizar una \texttt{build} de la imagen: \newline
@@ -701,6 +719,8 @@ Una vez creada la imagen, se debe subir a Docker Hub utilizando el siguiente com
     
 \end{figure}
 
+\newpage
+
 \justify
 Para verificar que la imagen se haya subido correctamente a Docker Hub, se debe ejecutar la aplicación Docker Desktop con la sesión iniciada y en el panel de la izquierda se debe seleccionar la pestaña llamada \textbf{Images}. Una vez en ella se debe seleccionar la pestaña llamada \textbf{My Hub} y en ella ya debería de aparecer la imagen subida.
 
@@ -711,12 +731,12 @@ Para verificar que la imagen se haya subido correctamente a Docker Hub, se debe 
     
 \end{figure}
 
-\newpage
-
 \section{CI/CD CON GITHUB ACTIONS}
 
 \justify
 En esta sección se explicarán los pasos para crear un workflow con GitHub Actions que permita subir la imagen a Docker Hub cuando se realice un push a la rama main del repositorio remoto y se enviará un mensaje de aviso por Telegram.
+
+\newpage
 
 \justify
 El primer paso será crear el bot de Telegram en el que se verán reflejados los avisos de nuevas subidas de la imagen en Docker Hub y para ello el primer paso será iniciar un nuevo chat con el bot \textbf{@BotFather} con el comando \texttt{/start}.
@@ -763,7 +783,88 @@ Una vez escrito el mensaje, se enviará una solicitud a la API de Telegram para 
     
 \end{figure}
 
+\newpage
+
 \justify
-Una vez obtenido el \textbf{CHAT\_ID}, 
+Una vez obtenido el \textbf{CHAT\_ID}, se debe acceder al repositorio del proyecto en GitHub y dirigirse a la pestaña llamada \textbf{Settings}.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/10.png}
+    
+\end{figure}
+
+\justify
+Una vez en la pestaña de configuración del repositorio, se debe pulsar sobre la opción llamada \textbf{Secrets and variables} y en las opciones que se muestran se debe pulsar sobre la opción llamada \textbf{Actions}.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=8cm]{images/11.png}
+    
+\end{figure}
+
+\newpage
+
+\justify
+Una vez realizado el paso anterior, se debe pulsar sobre el botón verde de \textbf{New repository secret}.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/12.png}
+    
+\end{figure}
+
+\justify
+A continuación se debe de proporcionar el nombre de la variable de entorno y su valor. De esta manera se crearán las siguiente variables de entorno en el repositorio:
+
+\begin{itemize}
+    
+    \item \textbf{DOCKER\_USERNAME}: Nombre de usuario de la cuenta de Docker Hub.
+    \item \textbf{DOCKER\_PASSWORD}: Contraseña de la cuenta de Docker Hub.
+    \item \textbf{TELEGRAM\_CHAT\_ID}: ID del chat con el bot de Telegram.
+    \item \textbf{TELEGRAM\_TOKEN}: Token del bot de Telegram.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/13.png}
+    
+\end{figure}
+
+\newpage
+
+\justify
+Una vez añadidas las variables de entorno en el repositorio, se debe de crear una archivo con extensión \texttt{.yml} en la siguiente ruta: \newline
+
+\centering
+\texttt{.github/workflows/<nombre\_archivo>.yml}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/14.png}
+    
+\end{figure}
+
+\justify
+El archivo creado para el workflow incluye los siguientes pasos:
+
+\begin{itemize}
+    
+    \item \textbf{Check}: Comprueba si se ha realizado un push a la rama main o master y si se ha creado una nueva etiqueta.
+    \item \textbf{Login}: Inicia sesión en Docker Hub.
+    \item \textbf{Set Tag}: Establece la tag de la imagen.
+    \item \textbf{Build \& Push}: Construye y sube la imagen a Docker Hub.
+    \item \textbf{Telegram Message}: Envía un mensaje al chat del bot de Telegram.
+
+\end{itemize}
+
+\justify
+Si se desea comprobar la ejecución del workflow, se recomienda ver el video que se encuentra en el directorio \textbf{videos} ubicado en la raíz del proyecto.
 
 \end{document}

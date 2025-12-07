@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  7 DEC 2025 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  7 DEC 2025 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,99 +340,127 @@ LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/regular/n' will be
 [11]
 
 [12]
-<images/1.png, id=48, 209.28188pt x 190.46156pt>
+
+[13]
+
+[14]
+<images/1.png, id=54, 209.28188pt x 190.46156pt>
 File: images/1.png Graphic file (type png)
 <use images/1.png>
-Package pdftex.def Info: images/1.png  used on input line 633.
+Package pdftex.def Info: images/1.png  used on input line 647.
 (pdftex.def)             Requested size: 227.62204pt x 207.1514pt.
 
 
-[13 <./images/1.png>]
-<images/2.png, id=54, 180.675pt x 121.20282pt>
+[15 <./images/1.png>]
+<images/2.png, id=60, 180.675pt x 121.20282pt>
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png  used on input line 658.
+Package pdftex.def Info: images/2.png  used on input line 674.
 (pdftex.def)             Requested size: 227.62204pt x 152.69785pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
+
+[16 <./images/2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
 
  []
 
-
-
-[14 <./images/2.png>]
-<images/3.png, id=59, 595.47469pt x 219.06844pt>
+<images/3.png, id=65, 595.47469pt x 219.06844pt>
 File: images/3.png Graphic file (type png)
 <use images/3.png>
-Package pdftex.def Info: images/3.png  used on input line 687.
+Package pdftex.def Info: images/3.png  used on input line 705.
 (pdftex.def)             Requested size: 426.79134pt x 157.01045pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
 
  []
 
-<images/4.png, id=60, 590.205pt x 194.97844pt>
+<images/4.png, id=66, 590.205pt x 194.97844pt>
 File: images/4.png Graphic file (type png)
 <use images/4.png>
-Package pdftex.def Info: images/4.png  used on input line 700.
+Package pdftex.def Info: images/4.png  used on input line 718.
 (pdftex.def)             Requested size: 426.79134pt x 140.99724pt.
-<images/5.png, id=61, 445.665pt x 201.00093pt>
+
+
+[17 <./images/3.png> <./images/4.png>]
+<images/5.png, id=72, 445.665pt x 201.00093pt>
 File: images/5.png Graphic file (type png)
 <use images/5.png>
-Package pdftex.def Info: images/5.png  used on input line 710.
+Package pdftex.def Info: images/5.png  used on input line 730.
 (pdftex.def)             Requested size: 426.79134pt x 192.48943pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[15 <./images/3.png> <./images/4.png>]
-<images/6.png, id=67, 587.19376pt x 242.40562pt>
+[18 <./images/5.png>]
+<images/6.png, id=78, 587.19376pt x 242.40562pt>
 File: images/6.png Graphic file (type png)
 <use images/6.png>
-Package pdftex.def Info: images/6.png  used on input line 727.
+Package pdftex.def Info: images/6.png  used on input line 747.
 (pdftex.def)             Requested size: 426.79134pt x 176.18896pt.
-<images/7.png, id=68, 574.39594pt x 357.58594pt>
+<images/7.png, id=79, 574.39594pt x 357.58594pt>
 File: images/7.png Graphic file (type png)
 <use images/7.png>
-Package pdftex.def Info: images/7.png  used on input line 737.
+Package pdftex.def Info: images/7.png  used on input line 757.
 (pdftex.def)             Requested size: 426.79134pt x 265.7007pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[16 <./images/5.png> <./images/6.png>]
-<images/8.png, id=74, 621.82312pt x 514.92375pt>
+[19 <./images/6.png> <./images/7.png>]
+<images/8.png, id=85, 621.82312pt x 514.92375pt>
 File: images/8.png Graphic file (type png)
 <use images/8.png>
-Package pdftex.def Info: images/8.png  used on input line 747.
+Package pdftex.def Info: images/8.png  used on input line 767.
 (pdftex.def)             Requested size: 426.79134pt x 353.41992pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[17 <./images/7.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 754--755
+[20 <./images/8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
 
  []
 
-<images/9.png, id=79, 310.91156pt x 296.60812pt>
+<images/9.png, id=90, 310.91156pt x 296.60812pt>
 File: images/9.png Graphic file (type png)
 <use images/9.png>
-Package pdftex.def Info: images/9.png  used on input line 762.
+Package pdftex.def Info: images/9.png  used on input line 782.
 (pdftex.def)             Requested size: 426.79134pt x 407.1608pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./images/9.png>]
+<images/10.png, id=95, 662.475pt x 81.30376pt>
+File: images/10.png Graphic file (type png)
+<use images/10.png>
+Package pdftex.def Info: images/10.png  used on input line 794.
+(pdftex.def)             Requested size: 426.79134pt x 52.37909pt.
+<images/11.png, id=96, 240.14719pt x 188.20313pt>
+File: images/11.png Graphic file (type png)
+<use images/11.png>
+Package pdftex.def Info: images/11.png  used on input line 804.
+(pdftex.def)             Requested size: 227.62204pt x 178.3899pt.
 
 
+[22 <./images/10.png> <./images/11.png>]
+<images/12.png, id=102, 583.42969pt x 122.70844pt>
+File: images/12.png Graphic file (type png)
+<use images/12.png>
+Package pdftex.def Info: images/12.png  used on input line 816.
+(pdftex.def)             Requested size: 426.79134pt x 89.76552pt.
+<images/13.png, id=103, 593.21625pt x 310.91156pt>
+File: images/13.png Graphic file (type png)
+<use images/13.png>
+Package pdftex.def Info: images/13.png  used on input line 835.
+(pdftex.def)             Requested size: 426.79134pt x 223.69484pt.
 
-[18 <./images/8.png>]
 
-[19 <./images/9.png>] (DOCUMENTACION API Y BBDD - ADRIANO.aux
+[23 <./images/12.png> <./images/13.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 842--843
+
+ []
+
+<images/14.png, id=109, 468.24937pt x 77.53969pt>
+File: images/14.png Graphic file (type png)
+<use images/14.png>
+Package pdftex.def Info: images/14.png  used on input line 850.
+(pdftex.def)             Requested size: 426.79134pt x 70.67833pt.
+
+
+[24 <./images/14.png>] (DOCUMENTACION API Y BBDD - ADRIANO.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -442,17 +470,17 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5037 strings out of 468130
- 90632 string characters out of 5429665
- 498126 words of memory out of 5000000
- 33586 multiletter control sequences out of 15000+600000
+ 5074 strings out of 468130
+ 91357 string characters out of 5429665
+ 497126 words of memory out of 5000000
+ 33623 multiletter control sequences out of 15000+600000
  691475 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,6n,73p,561b,370s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,6n,73p,561b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\elguapo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\elguapo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Bold.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Regular.pfb>
-Output written on "DOCUMENTACION API Y BBDD - ADRIANO.pdf" (20 pages, 624927 bytes).
+Output written on "DOCUMENTACION API Y BBDD - ADRIANO.pdf" (25 pages, 667063 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

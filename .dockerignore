@@ -1,7 +1,9 @@
 node_modules
 DOCUMENTACIÓN
+videos
 .git
 .gitignore
+.github
 *.md
 *.txt
 .env
