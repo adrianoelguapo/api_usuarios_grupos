@@ -459,7 +459,7 @@ async function startDatabase() {
 
     } finally {
 
-        if (conn) conn.end();
+        if (conn) conn.release();
 
     }
 
