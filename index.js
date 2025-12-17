@@ -45,7 +45,6 @@ app.get("/api/usuarios", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
 
         const result = await conn.query("SELECT * FROM users;");
 
@@ -71,7 +70,6 @@ app.get("/api/usuarios/:id", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
 
         const userId = req.params.id
 
@@ -99,8 +97,6 @@ app.post("/api/usuarios/", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
-
 
         const name = req.body.name;
         await conn.query("INSERT INTO users (name) VALUES (?);", [name]);
@@ -127,7 +123,6 @@ app.delete("/api/usuarios/:id", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
 
         const userId = req.params.id
 
@@ -155,7 +150,6 @@ app.put("/api/usuarios/:id", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
 
         const newName = req.body.name;
 
@@ -182,8 +176,7 @@ app.get("/api/grupos", async (req, res) => {
 
     try {
 
-        conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
+        conn = await pool.getConnection();        await conn.query("USE users_groups;");
 
         const result = await conn.query("SELECT * FROM groups;");
 
@@ -209,7 +202,6 @@ app.get("/api/grupos/:id", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
 
         const groupId = req.params.id;
 
@@ -262,8 +254,6 @@ app.post("/api/grupos", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
-
 
         const name = req.body.name;
         await conn.query("INSERT INTO groups (name) VALUES (?);", [name]);
@@ -289,8 +279,7 @@ app.delete("/api/grupos/:id", async (req, res) => {
 
     try {
 
-        conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
+        conn = await pool.getConnection();        await conn.query("USE users_groups;");
 
         const groupId = req.params.id;
 
@@ -318,7 +307,6 @@ app.post("/api/grupos/:id_grupo/:id_usuario", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
 
         const groupId = parseInt(req.params.id_grupo, 10);
         const userId = parseInt(req.params.id_usuario, 10);
@@ -359,7 +347,6 @@ app.delete("/api/grupos/:id_grupo/:id_usuario", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups;");
 
         const groupId = parseInt(req.params.id_grupo, 10);
         const userId = parseInt(req.params.id_usuario, 10);
@@ -400,7 +387,6 @@ app.put("/api/grupos/:id", async (req, res) => {
     try {
 
         conn = await pool.getConnection();
-        await conn.query("USE users_groups");
 
         const newName = req.body.name;
 
