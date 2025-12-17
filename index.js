@@ -457,9 +457,9 @@ async function startDatabase() {
 
         conn = await pool.getConnection();
 
-        await conn.query("CREATE DATABASE IF NOT EXISTS users_groups;");
+        // await conn.query("CREATE DATABASE IF NOT EXISTS users_groups;");
 
-        await conn.query("USE users_groups;")
+        // await conn.query("USE users_groups;")
 
         await conn.query("CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) NOT NULL);");
 
